@@ -28,6 +28,8 @@
         border: 4px solid green;
         border-collapse: collapse;
         /* border-collapse: separate; */
+        /* text-wrap: nowrap; */
+        white-space: nowrap;
       }
       tr:hover {
         background-color: blanchedalmond;
@@ -73,39 +75,53 @@
       <li>three</li>
     </ol>
 
-    <table>
-      <tr>
-        <th>S/N</th>
-        <th>Name</th>
-        <th>Date</th>
-        <th>Time</th>
-      </tr>
+    <div style="overflow: auto">
+      <table>
+        <tr>
+          <th>S/N</th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Time</th>
+        </tr>
 
-      <tr>
-        <td>1</td>
-        <td>Obi</td>
-        <td>02-04-1998</td>
-        <td>1:09:10</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Ada</td>
-        <td>02-04-1997</td>
-        <td>1:09:05</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Mich</td>
-        <td>02-04-1993</td>
-        <td>1:09:25</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Ify</td>
-        <td>02-04-1999</td>
-        <td>1:09:19</td>
-      </tr>
-    </table>
+        <tr>
+          <td>1</td>
+          <td>Obi</td>
+          <td>02-04-1998</td>
+          <td>1:09:10</td>
+          <td>3</td>
+          <td>Mich</td>
+          <td>02-04-1993</td>
+          <td>1:09:25</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ada</td>
+          <td>02-04-1997</td>
+          <td>1:09:05</td>
+          <td>3</td>
+          <td>Mich</td>
+          <td>02-04-1993</td>
+          <td>1:09:25</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mich</td>
+          <td>02-04-1993</td>
+          <td>1:09:25</td>
+          <td>3</td>
+          <td>Mich</td>
+          <td>02-04-1993</td>
+          <td>1:09:25</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Ify</td>
+          <td>02-04-1999</td>
+          <td>1:09:19</td>
+        </tr>
+      </table>
+    </div>
 
     <p>
       <b><a href="default.asp" target="_blank">This is a link</a></b>
