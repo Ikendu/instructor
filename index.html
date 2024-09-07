@@ -19,6 +19,35 @@
         transform: (-20deg);
         font: 1em "Aclonica", sans-serif;
       }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: full;
+        overflow: hidden;
+        background: grey;
+      }
+
+      li {
+        float: left;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        border-right: 2px solid blue;
+      }
+      li:last-child {
+        border-right: none;
+        position: absolute;
+        right: 0;
+        background: red;
+      }
+
+      a:hover {
+        background: blue;
+      }
     </style>
   </head>
   <body>
@@ -36,5 +65,11 @@
       <i class="fas fa-file"></i>
       <i class="fas fa-bars"></i>
     </nav>
+    <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
   </body>
 </html>
