@@ -10,7 +10,7 @@
         padding: 0;
         display: flex;
       }
-      ul {
+      .sidenav {
         display: block;
         list-style-type: none;
         background-color: rgb(103, 102, 102);
@@ -21,7 +21,7 @@
         height: 100%;
         width: 20%;
       }
-      li {
+      .sidenav li {
         display: block;
         margin: 0;
       }
@@ -42,33 +42,55 @@
         padding: 0 20px;
         height: 100%;
       }
+      .dropmore {
+        display: none;
+        position: abs;
+        right: 0px;
+        background-color: aliceblue;
+        width: 50%;
+      }
+      .dropmore a {
+        color: #211f1f;
+      }
+      .moredetails:hover .dropmore {
+        display: block;
+        color: #211f1f;
+      }
       @media screen and (max-width: 900px) {
-        ul {
+        .sidenav {
           width: 100%;
           height: auto;
+          z-index: 10;
         }
-        li {
+        .sidenav li {
           float: left;
         }
-        li:last-child {
+        .sidenav li:last-child {
           float: right;
           background-color: rgb(48, 48, 141);
         }
         .content {
           margin-left: 0;
+          z-index: -1;
         }
       }
       @media screen and (max-width: 600px) {
-        li {
+        .sidenav li {
           float: none;
+          position: relative;
         }
-        li:last-child {
+        .sidenav li:last-child {
           float: none;
           background-color: rgb(103, 102, 102);
         }
         .content {
+          position: relative;
           margin-top: 250px;
+          z-index: -10;
         }
+      }
+      .moredetails {
+        position: relative;
       }
     </style>
   </head>
@@ -76,7 +98,14 @@
     <ul class="sidenav">
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="moredetails">
+        <a href="#contact">More Details</a>
+        <div class="dropmore">
+          <a href="#address">Address</a>
+          <a href="#phone">Phone</a>
+          <a href="#mail">Email</a>
+        </div>
+      </li>
       <li><a href="#about">About</a></li>
     </ul>
 
