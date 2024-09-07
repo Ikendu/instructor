@@ -25,7 +25,7 @@
         display: block;
         margin: 0;
       }
-      a {
+      .sidenav li a {
         display: block;
         text-decoration: none;
         color: white;
@@ -34,7 +34,7 @@
       .active {
         background-color: rgb(187, 8, 8);
       }
-      a:hover:not(.active) {
+      .sidenav li a:hover:not(.active) {
         background-color: black;
       }
       .content {
@@ -55,6 +55,39 @@
       .moredetails:hover .dropmore {
         display: block;
         color: #211f1f;
+      }
+      .imagewrapper {
+        /* margin-left: 10%; */
+      }
+      .wrapper {
+        border: 2px solid rgb(190, 183, 183);
+        float: left;
+        width: 23%;
+        margin: 8px;
+      }
+      .wrapper:hover {
+        border: 2px solid black;
+      }
+      .wrapper img {
+        width: 100%;
+      }
+      .wrapper p {
+        text-align: center;
+      }
+      @media screen and (max-width: 1200px) {
+        .wrapper {
+          width: 30%;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .wrapper {
+          width: 46%;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .wrapper {
+          width: 100%;
+        }
       }
       @media screen and (max-width: 900px) {
         .sidenav {
@@ -108,22 +141,49 @@
       </li>
       <li><a href="#about">About</a></li>
     </ul>
-
     <div class="content">
-      <h2>Responsive Sidenav Example</h2>
-      <p>
-        This example use media queries to transform the sidenav to a top
-        navigation bar when the screen size is 900px or less.
-      </p>
-      <p>
-        We have also added a media query for screens that are 400px or less,
-        which will vertically stack and center the navigation links.
-      </p>
-      <p>
-        You will learn more about media queries and responsive web design later
-        in our CSS Tutorial.
-      </p>
-      <h3>Resize the browser window to see the effect.</h3>
+      <div>
+        <h2>Responsive Sidenav Example</h2>
+        <p>
+          This example use media queries to transform the sidenav to a top
+          navigation bar when the screen size is 900px or less.
+        </p>
+        <p>
+          We have also added a media query for screens that are 400px or less,
+          which will vertically stack and center the navigation links.
+        </p>
+        <p>
+          You will learn more about media queries and responsive web design
+          later in our CSS Tutorial.
+        </p>
+        <h3>Resize the browser window to see the effect.</h3>
+      </div>
+      <div class="imagewrapper">
+        <div class="wrapper">
+          <a href="image/img_5terre.jpg"
+            ><img src="image/img_5terre.jpg" alt="near water sides"
+          /></a>
+          <p class="desc">Near water side city</p>
+        </div>
+        <div class="wrapper">
+          <a href="image/img_5terre.jpg"
+            ><img src="image/img_5terre.jpg" alt="near water sides"
+          /></a>
+          <p class="desc">Near water side city</p>
+        </div>
+        <div class="wrapper">
+          <a href="image/img_5terre.jpg"
+            ><img src="image/img_5terre.jpg" alt="near water sides"
+          /></a>
+          <p class="desc">Near water side city</p>
+        </div>
+        <div class="wrapper">
+          <a href="image/img_5terre.jpg"
+            ><img src="image/img_5terre.jpg" alt="near water sides"
+          /></a>
+          <p class="desc">Near water side city</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
