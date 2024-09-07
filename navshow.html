@@ -5,8 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
       ul {
         list-style-type: none;
+        background-color: rgb(103, 102, 102);
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        position: fixed;
+        height: 100%;
+        width: 20%;
+      }
+      li {
+        display: block;
+        margin: 0;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+      }
+      .active {
+        background-color: rgb(187, 8, 8);
+      }
+      a:hover:not(.active) {
+        background-color: black;
+      }
+      .content {
+        margin-left: 20%;
+        padding: 0 20px;
+        height: 100%;
+      }
+      @media screen and (max-width: 900px) {
+        ul {
+          width: 100%;
+          height: auto;
+        }
+        li {
+          float: left;
+        }
+        li:last-child {
+          float: right;
+          background-color: rgb(48, 48, 141);
+        }
+        .content {
+          margin-left: 0;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        li {
+          float: none;
+        }
+        li:last-child {
+          float: none;
+          background-color: rgb(103, 102, 102);
+        }
       }
     </style>
   </head>
