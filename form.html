@@ -13,18 +13,25 @@
         margin: 0;
         padding: 0;
         background-color: rgb(191, 191, 193);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       form {
-        width: 100%;
         padding: 20px;
       }
-      input[type] {
+      input[type],
+      textarea {
         width: 100%;
-        margin-bottom: 20px;
+        margin: 5px 0 20px 0;
         padding: 20px;
         font-size: 16px;
         border-radius: 10px;
         border: solid 2px rgb(149, 149, 150);
+      }
+      input[type]:hover,
+      textarea:hover {
+        border: solid 2px rgb(122, 122, 149);
+        background-color: rgb(183, 140, 223);
+        color: white;
       }
       input[type="submit"] {
         width: 50%;
@@ -36,6 +43,15 @@
       input[type="submit"]:hover {
         background-color: rgb(114, 120, 104);
         color: white;
+      }
+      input:hover::placeholder {
+        color: rgb(221, 214, 214);
+      }
+      input:focus::placeholder {
+        color: white;
+      }
+      textarea {
+        resize: vertical;
       }
     </style>
   </head>
@@ -75,6 +91,13 @@
         name="password"
         placeholder="Enter your password"
       />
+
+      <label for="fname">Comment</label>
+      <textarea
+        id="fname"
+        name="comment"
+        placeholder="Enter your comment"
+      ></textarea>
 
       <input type="submit" value="Submit Form" />
     </form>
