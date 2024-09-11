@@ -48,6 +48,8 @@
 
       /* The second button */
       .button1 {
+        width: 50%;
+        display: inline;
         box-shadow: 0 9px gray;
         margin: 30px;
         padding: 20px;
@@ -55,6 +57,7 @@
         background-color: #123b2e;
         color: whitesmoke;
         border: none;
+        cursor: pointer;
         font-size: 30px;
       }
       .button1:hover {
@@ -64,6 +67,41 @@
       .button1:active {
         box-shadow: 0 5px black;
         transform: translateY(4px);
+      }
+
+      /* The Third button styling */
+      .button2 {
+        position: relative;
+        background-color: #04aa6d;
+        border: none;
+        font-size: 28px;
+        color: #ffffff;
+        padding: 20px 40px;
+        width: 50%;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .button2:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -40px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 2s;
+      }
+
+      .button2:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s;
       }
     </style>
     <title>Work on button</title>
