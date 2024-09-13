@@ -1,0 +1,16 @@
+/* Counter CSS */
+body {
+  counter-reset: num;
+}
+h1 {
+  counter-reset: nums;
+}
+
+h1::before {
+  counter-increment: num;
+  content: "Section " counter(num) ": ";
+}
+h2::before {
+  counter-increment: nums;
+  content: "Subsection " counter(num) " . " counter(nums) ": ";
+}
