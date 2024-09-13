@@ -1,6 +1,9 @@
 /* Counter CSS */
 body {
   counter-reset: num;
+  border: 20px solid transparent;
+  /* border-image: url("image/img_forest.jpg") 30 round; */
+  padding: 10px;
 }
 h1 {
   counter-reset: nums;
@@ -13,4 +16,18 @@ h1::before {
 h2::before {
   counter-increment: nums;
   content: "Subsection " counter(num) " . " counter(nums) ": ";
+}
+
+/* To clear float after an item */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.size {
+  width: calc(100% - 100px);
+  /* height: calc(100vh - 500px); */
+  height: max(50%, 500px);
+  /* height: min(70%, 300px); */
+  background-color: aquamarine;
 }
