@@ -1,9 +1,14 @@
 /* Counter CSS */
+* {
+  box-sizing: border-box;
+}
 body {
   counter-reset: num;
-  border: 20px solid transparent;
+  /* border: 20px solid transparent; */
   /* border-image: url("image/img_forest.jpg") 30 round; */
   padding: 10px;
+  background: url("/image/BingWallpaper.jpg") center no-repeat fixed;
+  background-size: cover;
 }
 h1 {
   counter-reset: nums;
@@ -30,4 +35,74 @@ h2::before {
   height: max(50%, 500px);
   /* height: min(70%, 300px); */
   background-color: aquamarine;
+}
+table {
+  width: 80%;
+  margin: 50px;
+}
+table,
+th,
+td {
+  border: 2px solid blue;
+  border-collapse: collapse;
+  color: rgb(214, 214, 245);
+}
+th {
+  padding: 20px;
+  background-color: rgb(6, 71, 6);
+  color: white;
+}
+td {
+  text-align: center;
+  /* padding: 10px; */
+  height: 50px;
+  vertical-align: middle;
+}
+td:hover {
+  background-color: rgb(95, 56, 8);
+  color: rgb(182, 247, 182);
+  cursor: pointer;
+}
+tr:nth-child(even) {
+  background-color: rgb(63, 61, 59);
+  color: white;
+}
+tr:hover {
+  background-color: bisque;
+  color: rgb(2, 93, 2);
+}
+.dooricon {
+  width: 40px;
+  color: blue;
+}
+.houseIcon {
+  width: 40px;
+  color: blue;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.firstIcon {
+  color: brown;
+  width: 40px;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 60;
+}
+.facebookIcon {
+  width: 40px;
+  color: red;
+}
+.fa-regular {
+  font-size: 40px;
+  color: red;
+}
+.gmailLink {
+  padding: 30px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+.gmailLink:hover {
+  background-color: rgb(14, 50, 20);
+  color: rgb(146, 200, 160);
 }
