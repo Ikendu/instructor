@@ -1,0 +1,34 @@
+/* This styling is for form page */
+* {
+  box-sizing: border-box;
+}
+.workers-form {
+  max-width: 600px;
+  background-color: rgb(211, 216, 216);
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+input[type],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: blueviolet;
+  color: whitesmoke;
+  border-radius: 8px;
+}
+input[type]:focus {
+  background-color: rgb(67, 164, 164);
+  color: white;
+}
+input:focus::placeholder {
+  color: #ace0f6;
+}

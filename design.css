@@ -1,4 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
 .responsive {
-  width: 25%;
+  border: 2px solid brown;
+  width: 23.5%;
+  border-radius: 10px;
+  float: left;
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+.desc {
+  text-align: center;
+  font-size: 30px;
+}
+.itemdesc {
+  font-size: 20px;
+}
+button {
+  margin-bottom: 10px;
+}
+hr {
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+}
+p {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 30%;
+    float: left;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
