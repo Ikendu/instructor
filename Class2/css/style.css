@@ -32,3 +32,8 @@
   font-family: Kanit, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.heroIcon {
+  width: 20px;
+  color: blue;
+  font-size: 10px;
+}
