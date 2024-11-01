@@ -1,4 +1,37 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  /* z-index: 1; */
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(53, 25, 80);
+}
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.logoSpace {
+  display: flex;
+  gap: 20px;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
 .first {
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+  width: 100%;
   font-size: 2em;
   color: red;
   outline: 10px dashed blueviolet;
@@ -12,7 +45,9 @@
 }
 
 .parent {
+  position: relative;
   border: 2px solid;
+  z-index: -1;
   width: 60%;
   margin: auto;
   padding: 20px;
@@ -32,8 +67,43 @@
   font-family: Kanit, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
+.childElement {
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  bottom: 0;
+  font-size: 30px;
+  color: brown;
+}
 .heroIcon {
   width: 20px;
   color: blue;
   font-size: 10px;
+}
+.overflowing {
+  background-color: #0d1d18;
+  color: aliceblue;
+  width: 200px;
+  height: 100px;
+  overflow-y: scroll;
+  float: left;
+}
+.add {
+  float: right;
+}
+@media (max-width: 500px) {
+  .overflowing {
+    float: none;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+  .add {
+    float: none;
+  }
+}
+
+.displaying {
+  /* visibility: hidden; */
 }
