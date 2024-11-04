@@ -52,12 +52,14 @@ header ul {
   margin: auto;
   padding: 20px;
 }
-.headText {
+
+/* .headText {
   text-transform: uppercase;
   text-align: center;
   color: blue;
   font-family: "Sofia";
-}
+} */
+
 .parent p {
   font-size: 1.2em;
   line-height: 2em;
@@ -87,10 +89,13 @@ header ul {
   width: 200px;
   height: 100px;
   overflow-y: scroll;
-  float: left;
+  /* float: left; */
+  display: inline-block;
+  /* margin-right: 20px; */
+  resize: both;
 }
 .add {
-  float: right;
+  /* float: right; */
 }
 @media (max-width: 500px) {
   .overflowing {
