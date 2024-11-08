@@ -112,3 +112,18 @@ header ul {
 .displaying {
   /* visibility: hidden; */
 }
+
+[name="search"] {
+  margin: 40px;
+  width: 50%;
+  background-color: aquamarine;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  background-image: url(../image/searchIcon.svg);
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  background-position: 10px 10px;
+}
+[name="area"] {
+}
