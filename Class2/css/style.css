@@ -1,3 +1,18 @@
+@keyframes changeBackground {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
 body {
   position: relative;
   margin: 0;
@@ -68,6 +83,8 @@ header ul {
   text-align: justify;
   font-family: Kanit, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  animation-name: changeBackground;
+  animation-duration: 4s;
 }
 
 .childElement {
@@ -94,6 +111,8 @@ header ul {
   display: inline-block;
   /* margin-right: 20px; */
   resize: both;
+  animation-name: changeBackground;
+  animation-duration: 3s;
 }
 .add {
   /* float: right; */
@@ -131,4 +150,22 @@ header ul {
   height: 100px;
   margin: 30px;
   resize: none;
+}
+
+.headShadow {
+  text-shadow: 0px 0px 5px blueviolet;
+  font-family: sans-serif;
+}
+.move {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transition: 2s;
+  /* transition-delay: 1s; */
+  margin: 100px;
+}
+.move:hover {
+  /* transform: translate(50px, 50px); */
+  transform: skew(20deg, 50deg);
 }
