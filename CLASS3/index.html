@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <h1>Please complete this form</h1>
+    <p>Thank you as you comply</p>
+    <form action="">
+      <label for="name">User Name:</label><br />
+      <input type="text" name="" id="name" value="John" class="name" /><br />
+
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        name=""
+        id="email"
+        required
+        size="40"
+        placeholder="yourmail@mail.com"
+      /><br />
+
+      <label for="age">Age:</label><br />
+      <input
+        type="number"
+        name=""
+        id="age"
+        value="20"
+        step="5"
+        required
+        min="18"
+        max="40"
+      /><br />
+
+      <label for="passport">Passport:</label><br />
+      <input type="file" name="" id="passport" /><br />
+
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        name=""
+        id="password"
+        required
+        placeholder="Enter your here"
+      /><br />
+
+      <label for="gender">Male:</label>
+      <input type="radio" id="gender" name="gender" />
+      <label for="female">Female:</label>
+      <input type="radio" id="female" name="gender" />
+      <label for="">Others:</label>
+      <input type="radio" name="gender" />
+      <br />
+
+      <label for="checkbox">Foods</label><br />
+      <input type="checkbox" name="food1" id="" />
+      <input type="checkbox" name="food2" id="" />
+      <input type="checkbox" name="food3" id="" /><br />
+
+      <input
+        type="range"
+        id="vol"
+        name="vol"
+        min="0"
+        max="100"
+        step="10"
+      /><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+      /><br />
+      <input type="url" id="homepage" name="homepage" />
+
+      <input type="search" id="gsearch" name="gsearch" /><br />
+      <label for="car">Select Your Favourite Car:</label>
+      <select name="cars" id="car">
+        <option value="">Mack</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab" selected>Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+      <input type="color" value="#ffffff" /><br />
+      <input type="password" name="" id="" /><br />
+      <input type="date" id="birthdaytime" name="birthdaytime" /><br />
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime" />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+    <video src="images/"></video>
+  </body>
+</html>
