@@ -2,12 +2,42 @@ body {
   background-color: rgb(184, 245, 224);
 }
 h1 {
-  color: rgb(3, 108, 73);
+  color: #161178;
   font-family: "Courier New", Courier, monospace;
+}
+.heading {
+  margin: 0;
+  margin-block: 0;
+  padding: 30px;
+  margin: 30px;
+  background-color: wheat;
+  border: 2px solid black;
+  outline: 10px solid #eb8c8c;
+  outline-offset: 20px;
+  text-align: center;
+}
+ul li a {
+  text-decoration: none;
+
+  padding: 20px;
+  background-color: #161178;
+  color: aliceblue;
+}
+ul li {
+  display: inline-block;
 }
 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
+  font-size: 100px;
+  margin-block: 0;
+  margin: 30px;
+  background-color: rgb(119, 188, 188);
+  padding: 20px;
+  line-height: 30px;
+  word-spacing: 10px;
+  letter-spacing: 0.5px;
+  text-indent: 50px;
+  white-space: nowrap;
 }
 form {
   border: solid 3px rgb(4, 98, 67);
