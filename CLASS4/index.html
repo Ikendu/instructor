@@ -13,6 +13,21 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .links {
+        background-color: brown;
+        padding: 20px;
+      }
+      .links a {
+        text-decoration: underline;
+        /* text-decoration: o; */
+        color: white;
+        font-size: 20px;
+      }
+      .links a:hover {
+        text-decoration: line-through;
+      }
+    </style>
     <title>Welcome to class</title>
   </head>
   <body>
@@ -37,17 +52,20 @@
     <img src="Vector.svg" alt="" />
     <h6 class="font-effect-shadow-multiple">Finally</h6>
     <div>
-      <h1>my links</h1>
+      <h1 style="color: blue; background-color: aquamarine">my links</h1>
       <p>my paragraph</p>
 
       <input type="text" />
       <img src="nov.jpg" alt="my image" width="400" />
-
-      <a href="https://twitter.com" class="link" id="">Twitter</a>
-      <a href="https://cnn.com">CNN</a>
-      <a href="https://facebook.com">Facebook</a>
-      <a href=""></a>
-      <a href=""></a>
+      <section class="links">
+        <a href="https://twitter.com" class="link" id="" target="_blank"
+          >Twitter</a
+        >
+        <a href="https://cnn.com">CNN</a>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="contact.html">Contacts</a>
+        <a href="about.html" target="_blank">About</a>
+      </section>
     </div>
     <div class="div" id="divi">
       <a href=""></a>
