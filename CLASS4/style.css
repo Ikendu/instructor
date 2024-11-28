@@ -21,4 +21,97 @@ h4 {
 p {
   background-color: aquamarine;
 } */
-
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.contain {
+  position: relative;
+  top: 100px;
+}
+.links {
+  background-color: brown;
+  padding: 20px;
+}
+.links a {
+  text-decoration: underline;
+  /* text-decoration: o; */
+  color: white;
+  font-size: 20px;
+}
+.links a:hover {
+  text-decoration: line-through;
+}
+.table,
+th,
+td {
+  border: 2px solid blue;
+  border-collapse: collapse;
+}
+.table {
+  width: 100%;
+}
+th,
+td {
+  padding: 20px;
+}
+/* th {
+  text-align: right;
+} */
+td {
+  text-align: center;
+}
+tr:hover {
+  background-color: #19f1a6;
+  color: red;
+}
+tr:first-child {
+  background-color: #0b5139;
+  color: white;
+  font-size: 20px;
+}
+tr:nth-child(odd) {
+  background-color: #818281;
+}
+.mylist {
+  width: 100%;
+  position: fixed;
+  background-color: #0b5139;
+  color: yellow;
+  padding: 30px;
+  top: 0;
+  z-index: 2;
+  margin: 0;
+}
+li {
+  cursor: pointer;
+  display: inline;
+  padding: 5px 20px;
+}
+li:hover {
+  background-color: #19f1a6;
+  color: rgb(81, 56, 25);
+}
+.tableClosure {
+  overflow: auto;
+}
+.headLink {
+  display: inline;
+}
+.digitalImage {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  display: block;
+  margin: 10px;
+  width: 500px;
+}
+.para10 {
+  background-color: #0b5139;
+  color: aqua;
+  width: 400px;
+  height: 300px;
+  font-size: 30px;
+  overflow: auto;
+}
