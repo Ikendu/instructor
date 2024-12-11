@@ -21,10 +21,15 @@ h4 {
 p {
   background-color: aquamarine;
 } */
+
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   position: relative;
+  background: linear-gradient(45deg, blue, red, purple);
 }
 .contain {
   position: relative;
@@ -76,7 +81,7 @@ tr:nth-child(odd) {
 }
 .mylist {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   background-color: #0b5139;
   color: yellow;
   padding: 30px;
@@ -100,9 +105,9 @@ li:hover {
   display: inline;
 }
 .digitalImage {
-  position: fixed;
-  top: 100px;
-  right: 0;
+  /* position: fixed; */
+  /* top: 100px;
+  right: 0; */
   display: block;
   margin: 10px;
   width: 500px;
@@ -114,4 +119,62 @@ li:hover {
   height: 300px;
   font-size: 30px;
   overflow: auto;
+}
+
+.floater {
+  /* float: right; */
+  z-index: 21;
+  margin: 20px;
+}
+.floater img {
+  width: 200px;
+}
+.rootId2 {
+  /* position: absolute; */
+  bottom: 50px;
+  padding: 20px;
+  border: 3px solid blue;
+  background: rgba(176, 7, 7, 0.16);
+  /* opacity: 0.2; */
+}
+p::after {
+  content: " gfhgfhgggg ";
+}
+
+/* [class] {
+  padding: 30px;
+  background-color: #19f1a6;
+} */
+#third {
+}
+[alt="mark"] {
+  background-color: #0b5139;
+  padding: 100px;
+}
+.formParent {
+  width: 50%;
+  margin: auto;
+}
+.formParent h3 {
+  font-size: 2em;
+  text-align: center;
+}
+input[type] {
+  padding: 20px;
+  background-color: #bff5f5;
+  width: 90%;
+  margin: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+input[type="button"] {
+  background-color: #3d3e3d;
+  color: aliceblue;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20%;
+}
+input[type]:hover {
+  background-color: #f1b3d9;
 }
