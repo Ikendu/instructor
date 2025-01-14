@@ -1,0 +1,16 @@
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  font-size: 16px;
+}
+.time {
+  font-size: 20px;
+  color: #58f05d;
+  background-color: #001601;
+  padding: 30px;
+}

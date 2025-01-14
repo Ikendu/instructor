@@ -1,0 +1,55 @@
+body {
+  background-color: yellow;
+  margin: 0;
+}
+a {
+  color: white;
+  background-color: red;
+  padding: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 0;
+  border-radius: 50px;
+}
+a:hover {
+  background-color: brown;
+  color: rgb(147, 224, 149);
+}
+
+.socal {
+  background-color: blue;
+}
+.socal:hover {
+  background-color: rgb(5, 74, 9);
+}
+.socal:visited {
+  color: blue;
+  background-color: rgb(2, 45, 45);
+}
+.socal:active {
+  color: wheat;
+}
+.listitems li {
+  display: inline-block;
+  background-color: aqua;
+  padding: 20px;
+  margin: 20px;
+}
+
+.listitems {
+  background-color: green;
+  display: inline-block;
+  padding-inline-start: 0;
+}
+
+.lists {
+  background-color: blue;
+  padding: 20px;
+}
+
+.lists li {
+  background-color: aqua;
+  margin: 10px;
+  padding: 10px;
+}
