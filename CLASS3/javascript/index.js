@@ -80,3 +80,13 @@ function addNumber(num1, num2, explaner) {
 addNumber(50, 10, 'this is my result')
 addNumber(10, 10, 'See my result below')
 addNumber(50, 100, 'The result is below')
+
+function addMult(num1, num2, str) {
+  let add = num1 + num2
+  let result = add * 10
+  let output = str + ' ' + result
+  return output
+}
+
+let result = addMult(10, 10, 'The result is')
+console.log(result)
