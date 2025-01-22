@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Digital Dream Solutions</h1>
+    <h1 id="headText">Digital Dream Solutions</h1>
     <p>Web Development and Digital Marketing</p>
     <p
       id="test"
@@ -19,24 +19,34 @@
     >
       We are progressing
     </p>
-    <h2>JavaScript for the web</h2>
-    <p>JavaScript is a powerful language for creating interactive web pages.</p>
+    <h2 class="change">JavaScript for the web</h2>
+    <p class="change">JavaScript is a powerful language for creating interactive web pages.</p>
+    <h3 class="change">JavaScript for the web</h3>
+    <p class="change">JavaScript another language.</p>
     <button id="btn" onclick="changer()">Click Me</button>
 
     <script>
+      document.getElementById('headText').innerHTML = 'Welcome to Digital Dream Solutions'
+
       function changer() {
-        document.getElementById('btn').innerText = 'I have been clicked'
-        document.getElementById('btn').style.backgroundColor = 'green'
-        document.getElementById('btn').style.fontSize = '30px'
-        document.getElementById('btn').style.color = 'white'
-        document.getElementById('btn').style.padding = '20px'
-        document.getElementById('btn').style.borderRadius = '5px'
+        let myVal = document.getElementById('btn')
+
+        myVal.innerText = 'I have been clicked'
+        myVal.style.backgroundColor = 'blue'
+        myVal.style.fontSize = '30px'
+        myVal.style.color = 'white'
+        myVal.style.padding = '20px'
+        myVal.style.borderRadius = '5px'
       }
-      // const heading = document.querySelector('h1');
-      // heading.style.color ='red';
-      // heading.style.fontSize = '30px';
-      // heading.style.fontWeight = 'bold';
-      // heading.style.textTransform = 'uppercase';
+
+      // const heading = document.getElementsByClassName('change')
+      let heading = document.querySelectorAll('.change')
+      console.log(heading)
+
+      heading[0].style.color = 'red'
+      heading[0].style.fontSize = '30px'
+      heading[0].style.fontWeight = 'bold'
+      heading[3].style.textTransform = 'uppercase'
     </script>
   </body>
 </html>
