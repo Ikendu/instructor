@@ -70,23 +70,70 @@ function addNums() {
   console.log(num1 + num2)
 }
 
-addNums()
+// addNums()
 
 function addNumber(num1, num2, explaner) {
   console.log(explaner)
   console.log(num1 + num2)
 }
 
-addNumber(50, 10, 'this is my result')
-addNumber(10, 10, 'See my result below')
-addNumber(50, 100, 'The result is below')
+// addNumber(50, 10, 'this is my result')
+// addNumber(10, 10, 'See my result below')
+// addNumber(50, 100, 'The result is below')
 
 function addMult(num1, num2, str) {
   let add = num1 + num2
   let result = add * 10
   let output = str + ' ' + result
-  return output
+  return result
 }
 
-let result = addMult(10, 10, 'The result is')
-console.log(result)
+let result = addMult(10, 10, 'The result is') * 10
+// console.log(result)
+
+let car1 = { name: 'Camry', model: 2024, tyer: 4, color: 'black', price: '$20000' }
+let car2 = {
+  name: 'Ikenga',
+  model: 2023,
+  tyer: 6,
+  color: 'white',
+  price: '$100000',
+  move: function () {
+    console.log('Starting...')
+    console.log('Moving...')
+    return 'Wow I can finaly move'
+  },
+}
+
+let val = car2.price
+
+// console.log(val)
+// console.log(car2.move())
+
+let car3 = {}
+car3.name = 'Toyota'
+car3.model = 2020
+car3.tyer = 4
+car3.color = 'sky blue'
+car3.price = '$22000'
+
+// console.log(car3)
+let values = Object.values(car3)
+let props = Object.keys(car3)
+let obj = Object.entries(car3)
+// console.log(values)
+// console.log(props)
+// console.log(obj)
+
+let str = 'ABCDEFGfhjfgkjgjkgjlglhgjHIJKLMNOPQRSTUVWXYZ'
+let sentence = 'I will be done very soon'
+let position = sentence.at(-4)
+console.log(position)
+
+console.log(str.slice(5, 21))
+console.log(str.substring(5, 21))
+console.log(str.substr(5, 21))
+
+let num11 = 200
+let string = `he said "hello how are you" I'm coming ${sentence} ${num11}`
+console.log(string)
