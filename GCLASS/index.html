@@ -25,6 +25,23 @@
     <p class="change">JavaScript another language.</p>
     <button id="btn" onclick="changer()">Click Me</button>
 
+    <form name="form">
+      <h2>Form Example</h2>
+
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+
+      <label for="lname">Last Name:</label><br />
+      <input type="text" id="lname" name="lname" /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" onchange="typing()" /><br />
+
+      <!-- <input type="submit" value="Submit" /> -->
+      <button type="submit" onclick="validateForm()">Submit Me</button>
+    </form>
+    <p id="demo">Your Email will show here</p>
+
     <script>
       document.getElementById('headText').innerHTML = 'Welcome to Digital Dream Solutions'
 
@@ -48,5 +65,6 @@
       heading[0].style.fontWeight = 'bold'
       heading[3].style.textTransform = 'uppercase'
     </script>
+    <script src="app.js"></script>
   </body>
 </html>
