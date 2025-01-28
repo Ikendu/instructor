@@ -16,12 +16,12 @@ changer()
 // }
 // message()
 
-let myArray = [
-  'Hello World!',
-  'This example demonstra method',
-  'Hello Worldssssss!.',
-  'This example demonstra methodssssssss.',
-]
+// let myArray = [
+//   'Hello World!',
+//   'This example demonstra method',
+//   'Hello Worldssssss!.',
+//   'This example demonstra methodssssssss.',
+// ]
 
 console.log(myArray[0])
 
