@@ -157,3 +157,12 @@ myArray.pop()
 // myArray.pop()
 myArray.shift()
 console.log(myArray)
+
+myArray[0] = 'Mercdecs'
+myArray[1] = 'black'
+myArray[3] = 2025
+
+console.log(myArray.length)
+let newArray = myArray.splice(1, 4)
+console.log(newArray)
+console.log(myArray)
