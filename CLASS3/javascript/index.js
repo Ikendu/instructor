@@ -163,6 +163,12 @@ myArray[1] = 'black'
 myArray[3] = 2025
 
 console.log(myArray.length)
-let newArray = myArray.splice(1, 4)
+let newArray = myArray.slice(1, 4)
 console.log(newArray)
-console.log(myArray)
+console.log(myArray.sort())
+
+const points = [40, 100, 1, 5, 25, 10]
+points.sort((a, b) => b - a)
+// points.sort(function (a, b) {
+//   return a - b)
+console.log(points)
