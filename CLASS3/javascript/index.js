@@ -125,15 +125,35 @@ let obj = Object.entries(car3)
 // console.log(props)
 // console.log(obj)
 
-let str = 'ABCDEFGfhjfgkjgjkgjlglhgjHIJKLMNOPQRSTUVWXYZ'
-let sentence = 'I will be done very soon'
-let position = sentence.at(-4)
-console.log(position)
+// let str = 'ABCDEFGfhjfgkjgjkgjlglhgjHIJKLMNOPQRSTUVWXYZ'
+// let sentence = 'I will be done very soon'
+// let position = sentence.at(-4)
+// console.log(position)
 
-console.log(str.slice(5, 21))
-console.log(str.substring(5, 21))
-console.log(str.substr(5, 21))
+// console.log(str.slice(5, 21))
+// console.log(str.substring(5, 21))
+// console.log(str.substr(5, 21))
 
 let num11 = 200
-let string = `he said "hello how are you" I'm coming ${sentence} ${num11}`
-console.log(string)
+// let string = `he said "hello how are you" I'm coming ${sentence} ${num11}`
+// console.log(string)
+let numStr = num11.toString()
+console.log(numStr)
+let decimalNum = 10.3948886686888
+let decimal = decimalNum.toFixed(2)
+console.log(Number(decimal) + 30)
+
+let myArray = ['Camry', 'blue', 4, 2024, 20000]
+console.log(myArray)
+console.log(myArray[0])
+console.log(myArray[1])
+myArray.push('Toyota')
+myArray.unshift('red')
+// myArray.push(2020)
+// myArray.push(22000)
+console.log(myArray)
+myArray.pop()
+// myArray.pop()
+// myArray.pop()
+myArray.shift()
+console.log(myArray)
