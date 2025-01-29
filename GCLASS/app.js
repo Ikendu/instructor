@@ -23,7 +23,7 @@ changer()
 //   'This example demonstra methodssssssss.',
 // ]
 
-console.log(myArray[0])
+// console.log(myArray[0])
 
 function validateForm() {
   let first = document.forms['form']['fname'].value
@@ -47,4 +47,24 @@ function validateForm() {
 function typing() {
   let x = document.getElementById('email').value
   document.getElementById('demo').innerHTML = x
+}
+
+let myclass = document.getElementById('myclass')
+
+myclass.addEventListener('click', myFunc)
+myclass.addEventListener('mouseover', secondFunc)
+myclass.addEventListener('mousedown', thirdFunc)
+
+function myFunc() {
+  alert('We are ending javascript soon')
+  console.log('Always check the console whenever you have an error in your code')
+}
+
+function secondFunc() {
+  myclass.innerHTML = 'Class Opened'
+}
+function thirdFunc() {
+  myclass.style.color = 'red'
+  myclass.style.backgroundColor = 'yellow'
+  myclass.style.padding = '5px'
 }

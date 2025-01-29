@@ -23,7 +23,7 @@
     <p class="change">JavaScript is a powerful language for creating interactive web pages.</p>
     <h3 class="change">JavaScript for the web</h3>
     <p class="change">JavaScript another language.</p>
-    <button id="btn" onclick="changer()">Click Me</button>
+    <!-- <button id="btn" onclick="changer()">Click Me</button> -->
 
     <form name="form">
       <h2>Form Example</h2>
@@ -41,6 +41,7 @@
       <button type="submit" onclick="validateForm()">Submit Me</button>
     </form>
     <p id="demo">Your Email will show here</p>
+    <button id="myclass">My Class</button>
 
     <script>
       document.getElementById('headText').innerHTML = 'Welcome to Digital Dream Solutions'
@@ -64,6 +65,29 @@
       heading[0].style.fontSize = '30px'
       heading[0].style.fontWeight = 'bold'
       heading[3].style.textTransform = 'uppercase'
+    </script>
+
+    <script>
+      para.appendChild(node)
+
+      function dynamicElement() {
+        const para = document.createElement('p')
+        const node = document.createTextNode('This is new.')
+        const element = document.getElementById('div1')
+        element.appendChild(para)
+      }
+    </script>
+
+    <script>
+      para.appendChild(node)
+
+      function dynamicElement() {
+        const para = document.createElement('p')
+        const node = document.createTextNode('This is new.')
+        const element = document.getElementById('div1')
+        element.appendChild(para)
+        // innerHeight
+      }
     </script>
     <script src="app.js"></script>
   </body>
