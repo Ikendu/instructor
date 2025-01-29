@@ -192,7 +192,7 @@ numArray.forEach((val, idx) => {
 
 console.log(newArray)
 
-let mapArray = numArray.map(function (val, idx) {
+let mapArray = numArray.map(function (val) {
   return val + 20
 })
 console.log(mapArray)
@@ -202,3 +202,31 @@ let filterArray = numArray.filter(function (val) {
 })
 
 console.log(filterArray)
+
+let num4 = 50
+const num5 = 50
+
+num4 = 60
+// num5 = 70
+let myTime = new Date()
+console.log(myTime)
+console.log(myTime.getMonth())
+let ceiler = Math.ceil(4.1)
+let floor = Math.floor(4.9)
+let round1 = Math.round(4.5)
+let round2 = Math.round(4.4)
+console.log('Ceiler=>', ceiler, 'Floorer=>', floor, 'Rounder=>', round1, 'Second Rounder=>', round2)
+console.log(Math.PI)
+
+console.log(3 ** 2)
+console.log(Math.pow(3, 2))
+
+console.log(Math.random() * 11)
+console.log(Math.floor(Math.random() * (11 - 5)) + 5)
+
+let randomNum = Array(10).fill(0)
+console.log(randomNum)
+
+randomNum = randomNum.map((val) => Math.floor(Math.random() * (11 - 5)) + 5)
+
+console.log(randomNum)
