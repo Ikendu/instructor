@@ -151,24 +151,54 @@ myArray.push('Toyota')
 myArray.unshift('red')
 // myArray.push(2020)
 // myArray.push(22000)
-console.log(myArray)
-myArray.pop()
+// console.log(myArray)
 // myArray.pop()
-// myArray.pop()
-myArray.shift()
-console.log(myArray)
+// // myArray.pop()
+// // myArray.pop()
+// myArray.shift()
+// console.log(myArray)
 
-myArray[0] = 'Mercdecs'
-myArray[1] = 'black'
-myArray[3] = 2025
+// myArray[0] = 'Mercdecs'
+// myArray[1] = 'black'
+// myArray[3] = 2025
 
-console.log(myArray.length)
-let newArray = myArray.slice(1, 4)
+// console.log(myArray.length)
+// let newArray = myArray.slice(1, 4)
+// console.log(newArray)
+// console.log(myArray.sort())
+
+// const points = [40, 100, 1, 5, 25, 10]
+// points.sort(sortfunct2)
+// points.sort(sortFunct)
+// console.log(points)
+
+function sortFunct(a, b) {
+  return a - b
+}
+
+// function() {
+//   console.log('My name is Peter')
+// }
+const sortfunct2 = (a, b) => b - a
+
+let numArray = [10, 20, 30, 40, 50]
+let newArray = []
+
+console.log(numArray)
+
+numArray.forEach((val, idx) => {
+  newArray.push(val * idx)
+})
+
 console.log(newArray)
-console.log(myArray.sort())
 
-const points = [40, 100, 1, 5, 25, 10]
-points.sort((a, b) => b - a)
-// points.sort(function (a, b) {
-//   return a - b)
-console.log(points)
+let mapArray = numArray.map(function (val, idx) {
+  return val + 20
+})
+console.log(mapArray)
+
+let filterArray = numArray.filter(function (val) {
+  return val < 40
+})
+
+console.log(filterArray)
