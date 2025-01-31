@@ -1,0 +1,29 @@
+admin@primelegal.com.ng
+primeAa@!
+
+3CX Live Chat Options
+
+Login:
+https://1721.3cx.cloud/#/office
+Email:
+admin@primelegal.com.ng
+Password:
+11111234Aa@
+
+Next Up
+After logging in, you can view your live chat settings here:
+https://1721.3cx.cloud/#/office/#/office/numbers-and-messaging
+
+[forminator_form id="1939"]
+
+[forminator_form id="1958"]
+
+
+Setup google mail server:
+https://wpmailsmtp.com/docs/how-to-set-up-the-gmail-mailer-in-wp-mail-smtp/?utm_source=WordPress&utm_medium=plugin-settings&utm_campaign=liteplugin&utm_locale=en_us&utm_content=Gmail%20documentation
+
+Client ID:
+325998796978-p2o53ii5et7ke018lk3tpnfrgvlvh60s.apps.googleusercontent.com
+link:	
+
+https://console.cloud.google.com/apis/credentials/oauthclient/325998796978-p2o53ii5et7ke018lk3tpnfrgvlvh60s.apps.googleusercontent.com?inv=1&invt=AblmhQ&project=primelegal&supportedpurview=project
