@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <?php include 'project/header.php';?>
+    <?php include 'header.php';?>
     <h1>Our Project Page</h1>
     <h2>Welcome to project Management</h2>
     <p>

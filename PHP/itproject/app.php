@@ -1,4 +1,7 @@
+
 <?php
+include 'connect.php';
+
 include "connect.php";
 
           $name = $age = $address = "";
@@ -11,25 +14,36 @@ include "connect.php";
             return $htmlched;
           }
             
-        $name = testInput($_REQUEST['name']);
-        $age = testInput($_REQUEST['age']);
+        $firstname = testInput($_REQUEST['firstname']);
+        $lastname = testInput($_REQUEST['lastname']);
+        $email = testInput($_REQUEST['email']);
         $address = testInput($_REQUEST['address']);
 
 
           //Sending to database
          echo "<br>";
-        echo $name . "<br>";  
-        echo $age . "<br>";
-        echo $address . "<br>";  
+          // echo $firstname . "<br>";  
+          // echo $lastname . "<br>";
+          // echo $email . "<br>";  
+          // echo $address. "<br>";
+
         
         //Passport upload
-        $target_dir = "fileupload/";
-        $target_file = $target_dir . basename($_FILES["passport"]["name"]);
+        // $target_dir = "fileupload/";
+        // $target_file = $target_dir . basename($_FILES["passport"]["name"]);
 
-        if(move_uploaded_file($_FILES["passport"]["tmp_name"], $target_file)){
-          echo "Passport uploaded successfully";
-        } else {
-          echo "Error uploading passport";
-        }
+        // if(move_uploaded_file($_FILES["passport"]["tmp_name"], $target_file)){
+        //   echo "Passport uploaded successfully";
+        // } else {
+        //   echo "Error uploading passport";
+        // }
         
+      ?>
+      
+      <?php
+      $stmt = $conn->prepare("INSERT INTO mycustomers (firstname, lastname, address, email) VALUES (?, ?, ?, ?)");
+
+      $stmt->bind_param("ssss", $firstname, $lastname, $address, $email);
+      
+      $stmt->execute();
       ?>
