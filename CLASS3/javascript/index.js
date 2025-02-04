@@ -296,7 +296,16 @@ switch (vary) {
   default:
     console.log('Today is not a day')
 }
+let myArray = ['Camry', 'blue', 4, 2024, 20000, 'More', 'another']
 
-for (let i = 0; i < 100; i++) {
-  console.log('This is a print out')
+// for (let i = 0; i < myArray.length; i++) {
+//   console.log(myArray[i], i)
+// }
+//
+for (let i in myArray) {
+  console.log(myArray[i], i)
 }
+
+// for (let i of myArray) {
+//   console.log(i, myArray.indexOf(i))
+// }
