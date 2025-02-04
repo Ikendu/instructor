@@ -134,21 +134,21 @@ let obj = Object.entries(car3)
 // console.log(str.substring(5, 21))
 // console.log(str.substr(5, 21))
 
-let num11 = 200
+// let num11 = 200
 // let string = `he said "hello how are you" I'm coming ${sentence} ${num11}`
 // console.log(string)
-let numStr = num11.toString()
-console.log(numStr)
-let decimalNum = 10.3948886686888
-let decimal = decimalNum.toFixed(2)
-console.log(Number(decimal) + 30)
+// let numStr = num11.toString()
+// console.log(numStr)
+// let decimalNum = 10.3948886686888
+// let decimal = decimalNum.toFixed(2)
+// console.log(Number(decimal) + 30)
 
-let myArray = ['Camry', 'blue', 4, 2024, 20000]
-console.log(myArray)
-console.log(myArray[0])
-console.log(myArray[1])
-myArray.push('Toyota')
-myArray.unshift('red')
+// let myArray = ['Camry', 'blue', 4, 2024, 20000]
+// console.log(myArray)
+// console.log(myArray[0])
+// console.log(myArray[1])
+// myArray.push('Toyota')
+// myArray.unshift('red')
 // myArray.push(2020)
 // myArray.push(22000)
 // console.log(myArray)
@@ -172,61 +172,131 @@ myArray.unshift('red')
 // points.sort(sortFunct)
 // console.log(points)
 
-function sortFunct(a, b) {
-  return a - b
-}
+// function sortFunct(a, b) {
+//   return a - b
+// }
 
 // function() {
 //   console.log('My name is Peter')
 // }
-const sortfunct2 = (a, b) => b - a
+// const sortfunct2 = (a, b) => b - a
 
-let numArray = [10, 20, 30, 40, 50]
-let newArray = []
+// let numArray = [10, 20, 30, 40, 50]
+// let newArray = []
 
-console.log(numArray)
+// console.log(numArray)
 
-numArray.forEach((val, idx) => {
-  newArray.push(val * idx)
-})
+// numArray.forEach((val, idx) => {
+//   newArray.push(val * idx)
+// })
 
-console.log(newArray)
+// console.log(newArray)
 
-let mapArray = numArray.map(function (val) {
-  return val + 20
-})
-console.log(mapArray)
+// let mapArray = numArray.map(function (val) {
+//   return val + 20
+// })
+// console.log(mapArray)
 
-let filterArray = numArray.filter(function (val) {
-  return val < 40
-})
+// let filterArray = numArray.filter(function (val) {
+//   return val < 40
+// })
 
-console.log(filterArray)
+// console.log(filterArray)
 
-let num4 = 50
-const num5 = 50
+// let num4 = 50
+// const num5 = 50
 
-num4 = 60
-// num5 = 70
-let myTime = new Date()
-console.log(myTime)
-console.log(myTime.getMonth())
-let ceiler = Math.ceil(4.1)
-let floor = Math.floor(4.9)
-let round1 = Math.round(4.5)
-let round2 = Math.round(4.4)
-console.log('Ceiler=>', ceiler, 'Floorer=>', floor, 'Rounder=>', round1, 'Second Rounder=>', round2)
-console.log(Math.PI)
+// num4 = 60
+// // num5 = 70
+// let myTime = new Date()
+// console.log(myTime)
+// console.log(myTime.getMonth())
+// let ceiler = Math.ceil(4.1)
+// let floor = Math.floor(4.9)
+// let round1 = Math.round(4.5)
+// let round2 = Math.round(4.4)
+// console.log('Ceiler=>', ceiler, 'Floorer=>', floor, 'Rounder=>', round1, 'Second Rounder=>', round2)
+// console.log(Math.PI)
 
-console.log(3 ** 2)
-console.log(Math.pow(3, 2))
+// console.log(3 ** 2)
+// console.log(Math.pow(3, 2))
 
-console.log(Math.random() * 11)
-console.log(Math.floor(Math.random() * (11 - 5)) + 5)
+// console.log(Math.random() * 11)
+// console.log(Math.floor(Math.random() * (11 - 5)) + 5)
 
-let randomNum = Array(10).fill(0)
-console.log(randomNum)
+// let randomNum = Array(10).fill(0)
+// console.log(randomNum)
 
-randomNum = randomNum.map((val) => Math.floor(Math.random() * (11 - 5)) + 5)
+// randomNum = randomNum.map((val) => Math.floor(Math.random() * (11 - 5)) + 5)
 
-console.log(randomNum)
+// console.log(randomNum)
+
+// if(what u are checking){
+//   block of code to execute
+// }
+
+let numm = 100
+
+// only if the condition is true
+// if (numm != 10) {
+//   console.log('It is greater')
+//   console.log('Can you see that')
+// }
+
+// check both sides of the condition
+// if (numm != 10) {
+//   console.log('It is greater')
+//   console.log('Can you see that')
+// } else {
+//   console.log('It is less')
+//   console.log('Can you see that again')
+// }
+
+if (numm == 10) {
+  console.log('It is equal')
+} else if (numm > 10) {
+  console.log('It is greater')
+} else if (numm < 10) {
+  console.log('It is less')
+} else if (numm >= 10) {
+  console.log('It is greater or equal')
+} else if (numm <= 10) {
+  console.log('It is less or equal')
+} else {
+  console.log('It is not equal')
+}
+
+// switch statement
+
+let myDate = new Date().getDay()
+let vary = 4
+
+switch (vary) {
+  case 0:
+    console.log('Today is Sunday')
+    break
+  case 1:
+    console.log('Today is Monday')
+    break
+  case 2:
+    console.log('Today is Tuesday')
+    break
+  case 3:
+    console.log('Today is Wednesday')
+    break
+  case 4:
+    console.log('Today is Thursday')
+    break
+  case 5:
+    console.log('Today is Friday')
+    break
+  case 6:
+    console.log('Today is Saturday')
+    break
+  default:
+    console.log('Today is not a day')
+}
+
+for (let i = 0; i < 100; i++) {
+  console.log('This is a print out')
+}
