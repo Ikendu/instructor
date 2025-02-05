@@ -296,16 +296,73 @@ switch (vary) {
   default:
     console.log('Today is not a day')
 }
-let myArray = ['Camry', 'blue', 4, 2024, 20000, 'More', 'another']
+// let myArray = ['Camry', 'blue', 4, 2024, 20000, 'More', 'another']
 
-// for (let i = 0; i < myArray.length; i++) {
+// for (let i in myArray) {
 //   console.log(myArray[i], i)
 // }
-//
-for (let i in myArray) {
-  console.log(myArray[i], i)
-}
 
 // for (let i of myArray) {
 //   console.log(i, myArray.indexOf(i))
 // }
+
+// console.log('From For Loop')
+
+// for (let ii = 0; ii < myArray.length; ) {
+//   console.log(myArray[ii], ii)
+// }
+
+// console.log('From While Loop')
+
+// let myArray = ['Camry', 'blue', 4, 2024, 20000, 'More', 'another']
+
+// let i = 0
+// while (i < myArray.length) {
+//   if (myArray[i] == 'More') {
+//     break
+//   }
+//   console.log(myArray[i], i)
+//   i++
+// }
+
+// //Do while loop
+// let a = 0
+
+// do {
+//   console.log('Testing do-while-loop', a)
+//   a++
+// } while (a < 7)
+
+let myArray = ['Camry', 'blue', 4, 2024, 20000, 'More', 'Camry', 2024, 'another', 4, 2024]
+
+// console.log(myArray)
+// console.log(myArray.length)
+let arraySet = new Set(myArray)
+// console.log(arraySet)
+let uniqueValue = [...arraySet]
+// console.log(uniqueValue.length)
+
+// console.log()
+
+let mySet = new Set()
+mySet.add('Camry')
+mySet.add('blue')
+mySet.add('Brown')
+mySet.add('Ikemba')
+mySet.add('Camry')
+mySet.add('blue')
+mySet.add('Black')
+
+console.log(mySet)
+
+for (let val of mySet) {
+  console.log(val)
+}
+
+let myMap = new Map()
+
+const fruits = new Map([
+  ['apples', 500],
+  ['bananas', 300],
+  ['oranges', 200],
+])
